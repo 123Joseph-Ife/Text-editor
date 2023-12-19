@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body style="height: 100vh;">
+    <style>
+        @media(min-width: 400px) {
+            body{
+            display: flex;
+            justify-content: space-between;
+            transform: rotate(1/2t  urn)
+}
+        }
+        
+        #box {
+            perspective: 5000px;
+            transform-style: preserve-3d;
+            transform: rotateX(-30000000px)
+        }
+    </style>
+    <div style="padding: 50px; background-color: green;" id="box">
+
+    </div>
+    <div>
+        <div id="radius">
+        <label for="radiusbar">radius</label>
+        <input type="range" max="100" id="radiusbar" value="50">
+        <span id="radiusresult"></span>
+        </div>
+        <div id="color">
+            <label for="colorbar">background</label>
+            <input type="color" id="colorbar">
+            <span id="colorresult"></span>
+        </div>
+        
+        <div id="width">
+            <label for="widthbar">width</label>
+            <input type="range" max="100" id="widthbar" value="50">
+            <span id="widthresult"></span>
+        </div>
+        
+        <div id="height">
+            <label for="heightbar">height</label>
+            <input type="range" max="100" id="heightbar" value="50">
+            <span id="heightresult"></span>
+        </div>
+    </div>
+    
+    <script src="inex.ts"></script>
+</body>
+
+</html>
