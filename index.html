@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>webh</title>
 </head>
 
 <body style="height: 100vh;">
     <style>
-        @media(min-width: 400px) {
-            body{
+
+        @media(max-width: 400px) {
+            body {
+                flex-direction: column;
+            }
+        }
+
+        body{
             display: flex;
             justify-content: space-between;
-            transform: rotate(1/2t  urn)
-}
+            padding: 30px;
+            align-items: center;
         }
+
         
         #box {
             perspective: 5000px;
